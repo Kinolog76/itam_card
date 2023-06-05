@@ -1,0 +1,210 @@
+// font-family: 'Inter', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+
+// fulscreen start 
+.wrapper {
+    overflow: hidden;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 0;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+.fullscreen {
+    display: flex;
+    font-size: 0;
+    position: relative;
+    z-index: -1;
+    background: url(../img/header-bg.jpg) center center / cover no-repeat;
+
+    &::before {
+        position: absolute;
+        content: "";
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 67px;
+        background-color: #fff;
+        z-index: 1;
+    }
+
+    &__body {
+        padding: 272px 0;
+        flex: 1 1 auto;
+        width: 100%;
+        position: relative;
+    }
+}
+
+.fullscreen3 {
+    &__content {
+        max-width: 875px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+        padding: 50px 60px;
+        background: rgba(4, 70, 176, 0.75);
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    &__title {
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 150%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+}
+
+.container3 {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.fullscreen {
+    &__container3 {
+        padding: 0;
+    }
+}
+
+// fulscreen end 
+// catalog start 
+
+.catalog {
+    &__container {
+        max-width: 1210px;
+        width: 100%;
+        padding: 40px 15px 156px;
+        margin: 0 auto;
+    }
+
+    .buttons__box {
+        margin-bottom: 60px;
+    }
+
+    &__button-filter {
+        padding: 15px 30px;
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+        background-color: transparent;
+        text-transform: uppercase;
+        color: #00317E;
+        border: 3px solid #0745AA;
+        border-radius: 90px;
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+
+        &.active {
+            color: #fff;
+            background: #0047B9;
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+        row-gap: 36px;
+        margin-bottom: 60px;
+
+    }
+}
+
+.catalog__item {
+    display: block;
+    padding: 0 10px;
+    flex: 1 1 33.33%;
+    min-width: 290px;
+    &:hover {
+        box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.15);
+    }
+}
+
+.item-block {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    height: 100%;
+
+    &__picture {
+        position: relative;
+        padding: 0 0 94.73% 0;
+    }
+
+    &__image {
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 8px 36px 8% 27px;
+    }
+
+    &__title {
+        flex: 1 1 auto;
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        color: #1EA7DF;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__price {
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        color: #252525;
+    }
+
+    &__btn-add {
+        display: block;
+        height: 44px;
+        width: 44px;
+        border-radius: 50%;
+        background: #F5F5F7 url(../img/icons/plus.svg) center center / 18.42px no-repeat;
+    }
+}
+
+.view-all__btn {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #0745AA;
+    padding: 15px 50px;
+    border-radius: 60px;
+    text-align: center;
+    margin: 0 auto;
+}
